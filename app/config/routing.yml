@@ -1,0 +1,4 @@
+lsv_pollen:
+    resource: "@LsvPollenBundle/Resources/config/routing.yml"
+    prefix:   /
+
