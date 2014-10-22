@@ -1,3 +1,7 @@
 lsv_pollen_homepage:
     path:     /hello/{name}
     defaults: { _controller: LsvPollenBundle:Default:index }
+
+lsv_pollen_get:
+    path:     /pollen/get
+    defaults: { _controller: LsvPollenBundle:Default:get }
