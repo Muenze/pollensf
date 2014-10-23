@@ -15,6 +15,6 @@ class DefaultController extends Controller
 
     public function getAction(Request $request)
     {
-        return new Response(json_encode(array('success' => true)), 200, array('Content-Type' => 'application/json'));
+        return new Response(json_encode(array('success' => true, 'data' => 'bla')), 200, array('Content-Type' => 'application/json'));
     }
 }
