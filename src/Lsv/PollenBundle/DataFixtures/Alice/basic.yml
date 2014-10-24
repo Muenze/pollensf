@@ -1,0 +1,8 @@
+Lsv\PollenBundle\Entity\User:
+  wehner:
+    lastname: Wehner
+    firstname: Guido
+    plainPassword: wehner
+    email: Wehner.Bottrop@gmx.de
+    username: wehner
+    roles: [ROLE_SUPER_ADMIN]

@@ -18,12 +18,15 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new \Nelmio\CorsBundle\NelmioCorsBundle(),
             new Lsv\PollenBundle\LsvPollenBundle(),
+            new \FOS\UserBundle\FOSUserBundle(),
+            new \h4cc\AliceFixturesBundle\h4ccAliceFixturesBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
             $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+            $bundles[] = new \Aga\DocumentorBundle\DocumentorBundle();
         }
 
         return $bundles;
