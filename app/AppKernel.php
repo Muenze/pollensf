@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Lsv\PollenBundle\LsvPollenBundle(),
             new \FOS\UserBundle\FOSUserBundle(),
             new \h4cc\AliceFixturesBundle\h4ccAliceFixturesBundle(),
+            new \JMS\SerializerBundle\JMSSerializerBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

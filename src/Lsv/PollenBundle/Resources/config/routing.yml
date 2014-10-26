@@ -1,7 +1,4 @@
-lsv_pollen_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: LsvPollenBundle:Default:index }
+user_token:
+    path: /user/token
+    defaults: { _controller: LsvPollenBundle:User:token }
 
-lsv_pollen_get:
-    path:     /pollen/get
-    defaults: { _controller: LsvPollenBundle:Default:get }

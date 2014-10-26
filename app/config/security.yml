@@ -10,7 +10,10 @@ security:
             pattern: ^/
             form_login:
                 provider: fos_userbundle
+                require_previous_session: false
                 csrf_provider: form.csrf_provider
+                success_handler: ext_authentication_handler
+                failure_handler: ext_authentication_handler
             logout:       true
             anonymous:    true
         dev:

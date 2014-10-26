@@ -36,6 +36,18 @@ class User extends BaseUser {
      */
     protected $firstname;
 
+    function toExtObject() {
+        $arr = array(
+            'firstname' => $this->getFirstname(),
+            'lastname' => $this->getLastname(),
+            'fullname' => $this->getFirstname() . " " . $this->getLastname(),
+            'username' => $this->getUsername(),
+            'email' => $this->getEmail()
+        );
+
+        return $arr;
+    }
+
     /**
      * Konstruktor
      */
